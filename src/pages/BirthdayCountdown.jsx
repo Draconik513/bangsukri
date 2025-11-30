@@ -14,7 +14,7 @@ const BirthdayCountdown = ({ isIOS }) => {
   const [replyMessage, setReplyMessage] = useState("");
   const navigate = useNavigate();
 
-  const targetDate = new Date("2025-11-27T22:00:00");
+  const targetDate = new Date("2025-12-01T00:00:00");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -62,7 +62,7 @@ const BirthdayCountdown = ({ isIOS }) => {
         className="text-center max-w-2xl"
       >
         <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-8">
-          The Birthday of <span className="text-purple-600">Reihani Nayla mumtazah</span>
+          The Birthday of <span className="text-purple-600">Reihani Nayla Mumtazah</span>
         </h1>
 
         <div className="mb-8">
