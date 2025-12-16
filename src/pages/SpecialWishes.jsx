@@ -6,15 +6,15 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-Halo Bella! hari ini adalah pengingat kalau dunia pernah dikasih hadiah besar waktu Bella lahir. Semoga Bella selalu dalam lindungan Tuhan, dikasih kesehatan, kekuatan dan bahagia yang banyak.
+Happy birth day my fav teacher  💗
+Yeay !! 😬 Hari ini adalah moment yang paling indah karena tepat 24 th wanita hebatku di lahirkan 🎉 
 
-Ein tau Bella mungkin kadang merasa berat tapi Ein mau Bella tau, Ein selalu ada selalu kasih semangat dan jadi pundak saat Bella lelah.
+Semoga Brili selalu dalam lindungan Allah swt,kesehatan ,kekuatan dan kebahagiaan tiada akhir 🤏
 
-Semoga tiap langkah Bella selalu dalam penyertaan Tuhan, impiannya satu-persatu terkabulkan. Ein percaya bella punya hati tulus dengan senyum yang buat orang lain merasa tenang dan jiwa cantik luar dalam. Dunia butuh lebih banyak orang seperti Bella!
+Saya tahu hidup tidak mudah,tapi saya ingin tahu bahwa Brili tidak sendiri , saya akan berusaha terus mendukungmu dan menjadi pundakmu saat kamu lelah 😊
 
-Kalau suatu hari Bella merasa ragu atau takut, ingat doa Ein : Semoga bella selalu dikelilingi orang-orang baik, rezeki yang cukup dan cinta yang tulus dari semua arah, termasuk dari Ein🫶🏻
 
-Ein sayang bella, dan selalu sayang Bella❤️
+
   `;
 
   return (
@@ -84,7 +84,7 @@ Ein sayang bella, dan selalu sayang Bella❤️
               >
                 <div className="text-[12rem] select-none text-center">❤️</div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Bella 💖
+                  Briliani Kharismaningtias 💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                   My Heart Belongs to you, Honey🥹

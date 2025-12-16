@@ -39,7 +39,7 @@ const Memories = ({ isIOS }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              Maaf ya Bellaaa...
+              Maaf ya sayanggg...
             </motion.p>
 
             <motion.p
@@ -47,10 +47,10 @@ const Memories = ({ isIOS }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.2 }}
             >
-              maaf kalau selama ini pernah cuek, atau kurang peka sama
-              perasaannya Bella. maaf kalau suka bikin Bella bete, ndamood,
-              salahpaham, atau bikin Bella kecewa. Ein bukan sengajaa, Ein masih
-              berusaha buat ngetreat Bella, buat cinta Bella lebih baik.
+              Maaf selama ini saya pernah cuek atau kurang peka dengan perasaan
+              brili 🥹 saya gak pernah berniat seperti itu ,semua itu karena saya
+              manusia biasa yang masih belajar menintai dan menyayangi dengan
+              baik 💗
             </motion.p>
 
             <motion.p
@@ -58,17 +58,10 @@ const Memories = ({ isIOS }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.8 }}
             >
-              Terima kasih sudah sabar, bisa terima Ein. Ein bakal lebih banyak
-              belajar lagi untuk Bella.
+              Maaf ya dan terima kasih brili selalu tetap percaya sama saya 🫶 
             </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 2.4 }}
-            >
-              Maaf dan Terimakasih sudah mau sama Ein❤️‍🩹
-            </motion.p>
+            
           </div>
         </motion.div>
 
