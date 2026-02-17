@@ -6,29 +6,15 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-Selamat ulang tahun ndahh.
-Hari ini tetap menjadi hari yang layak dirayakan,
-meski kini aku hanya bisa mengucapkannya
-dari jarak yang bernama kenangan.
-Semoga di usia yang baru,
-kamu selalu diberi kesehatan, ketenangan,
-dan kebahagiaan yang mungkin dulu
-belum sempat kita temukan bersama.
-Semoga langkahmu ringan,
-hatimu damai,
-dan hidupmu dikelilingi orang-orang
-yang benar-benar menjagamu.
-Terima kasih karena pernah menjadi bagian penting
-dalam hidupku.
-Meski kisah kita tidak sampai akhir,
-aku tidak pernah menyesal
-pernah mencintaimu dengan sepenuh hati.
-Hari ini aku tidak meminta apa-apa,
-selain doa sederhana:
-semoga kamu selalu bahagia,
-dengan atau tanpa aku di dalam ceritamu.
-Selamat bertambah usia.
-Semoga semesta selalu berpihak padamu.
+Sayangku 💖, hari ini adalah hari yang paling indah karena kamu lahir ke dunia. Aku berdoa semoga kamu selalu dalam lindungan Tuhan 🙏, diberi kesehatan, kekuatan, dan kebahagiaan tanpa akhir.
+
+Aku tahu hidup tidak selalu mudah, tapi aku ingin kamu tahu bahwa kamu tidak pernah sendiri. Aku akan selalu ada untuk mendukungmu, menyemangatimu, dan menjadi tempatmu bersandar saat kamu lelah 🤍.
+
+Semoga setiap langkahmu penuh berkah, dan setiap impianmu perlahan menjadi kenyataan ✨. Kamu punya hati yang tulus, senyum yang menenangkan, dan jiwa yang cantik luar dalam. Dunia butuh lebih banyak orang sepertimu 🌷.
+
+Aku percaya sepenuhnya padamu. Kamu kuat, hebat, dan pantas mendapatkan yang terbaik 💪. Jangan pernah ragukan dirimu sendiri, karena kamu adalah cahaya dalam hidup banyak orang termasuk hidupku 💞.
+
+Jika suatu hari kamu merasa ragu atau takut, ingatlah bahwa aku selalu mendoakanmu agar dikelilingi orang-orang baik, rezeki yang cukup, dan cinta yang tulus. Termasuk cintaku padamu ❤️.
   `;
 
   return (
@@ -98,7 +84,7 @@ Semoga semesta selalu berpihak padamu.
               >
                 <div className="text-[12rem] select-none text-center">❤️</div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Endah 💖
+                  Bang Sukri 💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                   My Heart Belongs to you, Honey🥹

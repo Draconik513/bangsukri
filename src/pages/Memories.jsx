@@ -34,52 +34,14 @@ const Memories = ({ isIOS }) => {
           </h2>
 
           <div className="text-left text-pink-800 space-y-4 leading-relaxed">
-            <p>
-              ndahh
-              <br />
-              aku minta maaf
-              <br />
-              mungkin jika saat sama aku kamu ga bahagia,kamu ga ngerasa
-              tenang,kamu ga ngerasa dimengerti,aku minta maaf,aku minta maaf
-              atas ketidakmampuan aku buat pahami diri kamu,tapi percayalah
-              selama sama kamu aku sebisa mungkin menjadi lelaki yg berniat
-              untuk selalu bahagiain kamu,sekali lagi aku minta maaf.
-            </p>
-
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              Asal kamu tau,hari itu dimana aku berkata ingin break up sama
-              kamu,aku ngerasa hancur,hancur sehancur hancurnya,aku ngerasa ini
-              semua mimpi ☺✨,bahkan saat aku ketik tulisan ini juga aku ga
-              percaya bahwa hari ini benar2 ada,aku sadar aku gabisa tanpa
-              kamu,aku cinta sama kamu,aku terlanjur berkata demikian,ingin
-              sekali rasanya hati ini beristirahat,tapi aku tidak mampu,karena
-              aku terlanjur menaruh seluruh rasa sayang dan cintaku sama kamu
-              ndahh,aku gila.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1.2 }}
-            >
-              namun sekarang,nasi sudah menjadi tempe,tidak ada lagi senyum
-              indahmu disana tidak ada lagi pelukan hangat yang kamu kasih buat
-              aku,tapi aku senang atas bertambahnya usia kamu,semoga kamu selalu
-              bahagia meski tak bersamaku,bila nanti tak kan kembali,kenang lah
-              aku sepanjang hidupmu,aku akan selalu menanti kamu kembali mungkin
-              dengan versi diri kamu yg berbeda dan aku juga pastinya.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1.8 }}
-            >
-              I LOVE YOU SO MUCH 🤍
+              Maaf cinta di hari ulang tahun ini dina tak bisa ngerayain hari
+              spesial kamu secara langsung tapi dina selalu berdoa yang terbaik
+              untuk abang,dan insyaallah tahun depan kita udah tidak LDR lagi
             </motion.p>
           </div>
         </motion.div>
