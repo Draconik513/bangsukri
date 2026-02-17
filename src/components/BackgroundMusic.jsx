@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 
 const BackgroundMusic = () => {
-  const [isMusicPlaying, setIsMusicPlaying] = useState(true);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [isStarted, setIsStarted] = useState(false);
   const iframeRef = useRef(null);
 
   useEffect(() => {
     const iframe = iframeRef.current;
-    if (!iframe) return;
+    if (!iframe || !isStarted) return;
 
     const sendCommand = (func, args = []) => {
       iframe.contentWindow?.postMessage(
@@ -19,21 +20,25 @@ const BackgroundMusic = () => {
       );
     };
 
-    // Delay untuk memastikan iframe sudah ready
     const timer = setTimeout(() => {
       if (isMusicPlaying) {
         sendCommand("unMute");
         sendCommand("playVideo");
       } else {
-        sendCommand("mute");
+        sendCommand("pauseVideo");
       }
-    }, 1000);
+    }, 500);
 
     return () => clearTimeout(timer);
-  }, [isMusicPlaying]);
+  }, [isMusicPlaying, isStarted]);
 
   const toggleMusic = () => {
-    setIsMusicPlaying((prev) => !prev);
+    if (!isStarted) {
+      setIsStarted(true);
+      setIsMusicPlaying(true);
+    } else {
+      setIsMusicPlaying((prev) => !prev);
+    }
   };
 
   return (
@@ -53,7 +58,7 @@ const BackgroundMusic = () => {
           ref={iframeRef}
           width="1"
           height="1"
-          src="https://www.youtube.com/embed/tGv7CUutzqU?autoplay=1&loop=1&playlist=tGv7CUutzqU&enablejsapi=1&mute=1"
+          src="https://www.youtube.com/embed/tGv7CUutzqU?autoplay=0&loop=1&playlist=tGv7CUutzqU&enablejsapi=1&mute=1"
           title="Background Music"
           frameBorder="0"
           allow="autoplay; encrypted-media"
@@ -70,7 +75,7 @@ const BackgroundMusic = () => {
             {isMusicPlaying ? "🔊" : "🔇"}
           </button>
           <span className="ml-2 text-sm text-pink-600 font-medium">
-            {isMusicPlaying ? "Music ON" : "Music OFF"}
+            {!isStarted ? "Play Music" : isMusicPlaying ? "Music ON" : "Music OFF"}
           </span>
         </div>
       </div>
