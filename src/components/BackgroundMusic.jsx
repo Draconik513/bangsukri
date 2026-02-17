@@ -1,69 +1,28 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
+import musicFile from "../assets/audio/The 1975 - About You Official.mp3";
 
 const BackgroundMusic = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
-  const [isStarted, setIsStarted] = useState(false);
-  const iframeRef = useRef(null);
-
-  useEffect(() => {
-    const iframe = iframeRef.current;
-    if (!iframe || !isStarted) return;
-
-    const sendCommand = (func, args = []) => {
-      iframe.contentWindow?.postMessage(
-        JSON.stringify({
-          event: "command",
-          func,
-          args,
-        }),
-        "*",
-      );
-    };
-
-    const timer = setTimeout(() => {
-      if (isMusicPlaying) {
-        sendCommand("unMute");
-        sendCommand("playVideo");
-      } else {
-        sendCommand("pauseVideo");
-      }
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, [isMusicPlaying, isStarted]);
+  const audioRef = useRef(null);
 
   const toggleMusic = () => {
-    if (!isStarted) {
-      setIsStarted(true);
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (!isMusicPlaying) {
+      audio.play().catch(err => console.log("Audio play error:", err));
       setIsMusicPlaying(true);
     } else {
-      setIsMusicPlaying((prev) => !prev);
+      audio.pause();
+      setIsMusicPlaying(false);
     }
   };
 
   return (
     <>
-      {/* Iframe kecil tersembunyi */}
-      <div
-        style={{
-          position: "absolute",
-          top: "-100px",
-          left: "-100px",
-          width: "1px",
-          height: "1px",
-          overflow: "hidden",
-        }}
-      >
-        <iframe
-          ref={iframeRef}
-          width="1"
-          height="1"
-          src="https://www.youtube.com/embed/tGv7CUutzqU?autoplay=0&loop=1&playlist=tGv7CUutzqU&enablejsapi=1&mute=1"
-          title="Background Music"
-          frameBorder="0"
-          allow="autoplay; encrypted-media"
-        ></iframe>
-      </div>
+      <audio ref={audioRef} loop>
+        <source src={musicFile} type="audio/mpeg" />
+      </audio>
 
       {/* Tombol kontrol */}
       <div className="fixed bottom-20 right-4 z-50">
@@ -75,7 +34,7 @@ const BackgroundMusic = () => {
             {isMusicPlaying ? "🔊" : "🔇"}
           </button>
           <span className="ml-2 text-sm text-pink-600 font-medium">
-            {!isStarted ? "Play Music" : isMusicPlaying ? "Music ON" : "Music OFF"}
+            {isMusicPlaying ? "Music ON" : "Music OFF"}
           </span>
         </div>
       </div>
